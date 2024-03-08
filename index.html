@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="style.css">
+  <title>The next generation web game platform</title>
+</head>
+
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Navbar</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#features">Features</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#roadmap">Roadmap</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <div class="c-main-view">
+    <img class="c-main-view__img w-100" src="images/lighthouse7.jpg" alt="main-view-img">
+    <div class="c-main-view__cover w-100 h-100"></div>
+    <div class="c-main-view__text w-100 h-100">
+      <h2 class="ps-5 fw-bold">The next generation web game platform</h2>
+      <h3 class="ps-5 fw-bold">win-win-win for developers,advertisers, players.</h3>
+    </div>
+  </div>
+
+  <section class="l-section container" id="features">
+    <div class="c-features p-2">
+      <h2>Top 4 Features showcasing</h2>
+      <div class="c-features__contents pt-3">
+        <input type="radio" id="version" name="feature" checked>
+        <input type="radio" id="leaderboard" name="feature">
+        <input type="radio" id="your-score" name="feature">
+        <input type="radio" id="ranking" name="feature">
+
+        <div class="c-features__selector mb-2">
+          <div>
+            <label class="version" for="version">Game version</label>
+            <label class="leader-board" for="leaderboard">Highscore leaderboard</label>
+            <label class="your-score" for="your-score">User profile to show off high scores</label>
+            <label class="ranking" for="ranking">Games ranking</label>
+          </div>
+        </div>
+
+        <div class="c-features__content version">
+          <h3>Game Version</h3>
+          <img src="https://placehold.jp/300x150.png" alt="game">
+          <div class="c-features__text">
+            Select a specific version or release of the game. Players may choose different versions of the game,
+            allowing for the addition of new features or fixes to past bugs.
+          </div>
+        </div>
+        <div class="c-features__content leader-board">
+          <h3>Highscore Leaderboard</h3>
+          <img src="https://placehold.jp/300x150.png" alt="leader-board">
+          <div class="c-features__text">Display the highest scores achieved by players within the game. It foster
+            competition and allows players to compare their performances with others</div>
+        </div>
+        <div class="c-features__content your-score">
+          <h3>User Profile to Showcase High Scores</h3><img src="https://placehold.jp/300x150.png" alt="your-score">
+          <div class="c-features__text">Share your high scores and game achievements with other players or friends.
+            Profiles typically include a player's nickname, avatar, and attained accomplishments.
+          </div>
+        </div>
+        <div class="c-features__content ranking">
+          <h3>Game Ranking</h3><img src="https://placehold.jp/300x150.png" alt="Ranking">
+          <div class="c-features__text">Show where players stand in the game based on performance metrics. This ranking
+            system often highlights top performers
+            and motivates players to improve their standings.
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="l-section container" id="roadmap">
+    <div class="p-2">
+      <h3>Graphic of Ecosystem Roadmap for 2023</h3>
+      <img src="./images/roadmap.svg" alt="">
+    </div>
+  </section>
+  <footer class="d-flex justify-content-center align-items-center">
+    <div>P-media</div>
+  </footer>
+</body>
+
+</html>

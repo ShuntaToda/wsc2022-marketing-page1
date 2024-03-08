@@ -1,0 +1,137 @@
+.l-section {
+  padding: 80px 0;
+}
+
+
+.c-main-view {
+  height: 700px;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.c-main-view>img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.c-main-view__cover {
+  position: absolute;
+  left: 0;
+  top: 0;
+  /* background-color: rgba(255, 255, 255, 0.36); */
+}
+
+.c-main-view__text {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.c-main-view__text>h2 {
+  font-size: 3.5rem;
+  padding-top: 100px;
+  color: #222;
+}
+
+.c-main-view__text>h3 {
+  color: #9b9b9b;
+}
+
+
+.c-features__selector {
+  display: flex;
+}
+
+.c-features__selector>div {
+  border: solid 2px rgb(161, 161, 161);
+  display: flex;
+  color: #222;
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+
+@media (width <=500px) {
+  .c-features__selector>div {
+    flex-direction: column;
+  }
+}
+
+.c-features label {
+  padding: 10px 15px;
+  position: relative;
+}
+
+.c-features label:not(:last-child)::after {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 1px;
+  height: 50%;
+  background-color: rgb(196, 196, 196);
+  top: 50%;
+  left: 100%;
+  translate: 0 -50%;
+}
+
+@media (width <=500px) {
+  .c-features label:not(:last-child)::after {
+    display: none;
+  }
+}
+
+.c-features input {
+  display: none;
+}
+
+.c-features__content {
+  display: none;
+  padding: 40px 50px;
+  border-radius: 5px;
+  translate: 0 -10px;
+  border: solid 2px rgb(161, 161, 161);
+  height: 400px;
+}
+
+.c-features__content>h3 {
+  /* margin-top: 20px; */
+}
+
+#version:checked~.c-features__content.version {
+  display: block;
+}
+
+#leaderboard:checked~.c-features__content.leader-board {
+  display: block;
+}
+
+#your-score:checked~.c-features__content.your-score {
+  display: block;
+}
+
+#ranking:checked~.c-features__content.ranking {
+  display: block;
+}
+
+/* input */
+#version:checked~.c-features__selector label.version {
+  background-color: rgb(161, 161, 161);
+}
+
+#leaderboard:checked~.c-features__selector label.leader-board {
+  background-color: rgb(161, 161, 161);
+}
+
+#your-score:checked~.c-features__selector label.your-score {
+  background-color: rgb(161, 161, 161);
+}
+
+#ranking:checked~.c-features__selector label.ranking {
+  background-color: rgb(161, 161, 161);
+}
+
+footer {
+  height: 300px;
+  background-color: rgb(165, 222, 255);
+}
